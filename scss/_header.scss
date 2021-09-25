@@ -1,0 +1,9 @@
+@import 'custom';
+
+.navbar > a {
+    text-transform: uppercase !important;
+} 
+
+.border-header {
+    border: 2px solid $bacher-green-dark;
+}
