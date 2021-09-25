@@ -3,3 +3,12 @@
 @use 'footer';
 @use 'main';
 
+@import 'custom';
+
+.header-alpina {
+    font-family: $font-alpina;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 72px;
+}
+

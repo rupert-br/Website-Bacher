@@ -11,5 +11,16 @@ $primary:  $bacher-green;
 
 $nav-link-color: $bacher-green-dark;
 
+$roboto: 'Roboto';
+$font-family-sans-serif: $roboto;
+
+@font-face {
+    font-family: "GT Alpina";
+    src: url("./public/fonts/gt-alpina/GT-Alpina-Extended-Thin-Trial.woff2") format("woff2")
+};
+
+$font-alpina: 'GT Alpina';
+
 // Import bootstrap 5
-@import "../node_modules/bootstrap/scss/bootstrap.scss"
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');

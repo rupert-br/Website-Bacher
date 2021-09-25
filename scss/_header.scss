@@ -1,9 +1,22 @@
 @import 'custom';
 
-.navbar > a {
-    text-transform: uppercase !important;
-} 
-
 .border-header {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 80px;
     border: 2px solid $bacher-green-dark;
+    box-sizing: content-box;
+}
+
+.border-logo {
+    border-right: 2px solid $bacher-green-dark;
+}
+
+.nav-link {
+    height: 80px !important;
+}
+
+.border-contact {
+    border-left: 2px solid $bacher-green-dark;
 }
