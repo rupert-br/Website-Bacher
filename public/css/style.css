@@ -1,13 +1,18 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @font-face {
-  font-family: "GT Alpina";
-  src: url("./public/fonts/gt-alpina/GT-Alpina-Extended-Thin-Trial.woff2") format("woff2");
+  font-family: "roboto";
+  src: url(../fonts/roboto/Roboto-Medium.ttf) format(truetype);
 }
+@font-face {
+  font-family: GT Alpina;
+  src: local("GT Alpina Trial Ext Th");
+  src: url(../fonts/gt_alpina/GT-Alpina-Extended-Thin-Trial.ttf) format(truetype);
+}
+.header-alpina {
+  font-family: GT Alpina, "Times New Roman", Times, serif;
+  font-size: 72px !important;
+}
+
 /*!
  * Bootstrap v5.1.1 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -57,7 +62,7 @@
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 33, 37, 41;
   --bs-body-bg-rgb: 255, 255, 255;
-  --bs-font-sans-serif: "Roboto";
+  --bs-font-sans-serif: "roboto";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   --bs-body-font-family: var(--bs-font-sans-serif);
@@ -11123,9 +11128,19 @@ textarea.form-control-lg {
   }
 }
 @font-face {
-  font-family: "GT Alpina";
-  src: url("./public/fonts/gt-alpina/GT-Alpina-Extended-Thin-Trial.woff2") format("woff2");
+  font-family: "roboto";
+  src: url(../fonts/roboto/Roboto-Medium.ttf) format(truetype);
 }
+@font-face {
+  font-family: GT Alpina;
+  src: local("GT Alpina Trial Ext Th");
+  src: url(../fonts/gt_alpina/GT-Alpina-Extended-Thin-Trial.ttf) format(truetype);
+}
+.header-alpina {
+  font-family: GT Alpina, "Times New Roman", Times, serif;
+  font-size: 72px !important;
+}
+
 /*!
  * Bootstrap v5.1.1 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -11175,7 +11190,7 @@ textarea.form-control-lg {
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 33, 37, 41;
   --bs-body-bg-rgb: 255, 255, 255;
-  --bs-font-sans-serif: "Roboto";
+  --bs-font-sans-serif: "roboto";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   --bs-body-font-family: var(--bs-font-sans-serif);
@@ -22262,9 +22277,19 @@ textarea.form-control-lg {
 }
 
 @font-face {
-  font-family: "GT Alpina";
-  src: url("./public/fonts/gt-alpina/GT-Alpina-Extended-Thin-Trial.woff2") format("woff2");
+  font-family: "roboto";
+  src: url(../fonts/roboto/Roboto-Medium.ttf) format(truetype);
 }
+@font-face {
+  font-family: GT Alpina;
+  src: local("GT Alpina Trial Ext Th");
+  src: url(../fonts/gt_alpina/GT-Alpina-Extended-Thin-Trial.ttf) format(truetype);
+}
+.header-alpina {
+  font-family: GT Alpina, "Times New Roman", Times, serif;
+  font-size: 72px !important;
+}
+
 /*!
  * Bootstrap v5.1.1 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -22314,7 +22339,7 @@ textarea.form-control-lg {
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 33, 37, 41;
   --bs-body-bg-rgb: 255, 255, 255;
-  --bs-font-sans-serif: "Roboto";
+  --bs-font-sans-serif: "roboto";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   --bs-body-font-family: var(--bs-font-sans-serif);
@@ -33388,9 +33413,19 @@ textarea.form-control-lg {
 }
 
 @font-face {
-  font-family: "GT Alpina";
-  src: url("./public/fonts/gt-alpina/GT-Alpina-Extended-Thin-Trial.woff2") format("woff2");
+  font-family: "roboto";
+  src: url(../fonts/roboto/Roboto-Medium.ttf) format(truetype);
 }
+@font-face {
+  font-family: GT Alpina;
+  src: local("GT Alpina Trial Ext Th");
+  src: url(../fonts/gt_alpina/GT-Alpina-Extended-Thin-Trial.ttf) format(truetype);
+}
+.header-alpina {
+  font-family: GT Alpina, "Times New Roman", Times, serif;
+  font-size: 72px !important;
+}
+
 /*!
  * Bootstrap v5.1.1 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -33440,7 +33475,7 @@ textarea.form-control-lg {
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 33, 37, 41;
   --bs-body-bg-rgb: 255, 255, 255;
-  --bs-font-sans-serif: "Roboto";
+  --bs-font-sans-serif: "roboto";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   --bs-body-font-family: var(--bs-font-sans-serif);
@@ -44509,10 +44544,24 @@ textarea.form-control-lg {
   background-color: rgba(207, 235, 209, 0.25);
 }
 
-@font-face {
-  font-family: "GT Alpina";
-  src: url("./public/fonts/gt-alpina/GT-Alpina-Extended-Thin-Trial.woff2") format("woff2");
+.extra-ws {
+  padding-top: 3rem !important;
 }
+
+@font-face {
+  font-family: "roboto";
+  src: url(../fonts/roboto/Roboto-Medium.ttf) format(truetype);
+}
+@font-face {
+  font-family: GT Alpina;
+  src: local("GT Alpina Trial Ext Th");
+  src: url(../fonts/gt_alpina/GT-Alpina-Extended-Thin-Trial.ttf) format(truetype);
+}
+.header-alpina {
+  font-family: GT Alpina, "Times New Roman", Times, serif;
+  font-size: 72px !important;
+}
+
 /*!
  * Bootstrap v5.1.1 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -44562,7 +44611,7 @@ textarea.form-control-lg {
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 33, 37, 41;
   --bs-body-bg-rgb: 255, 255, 255;
-  --bs-font-sans-serif: "Roboto";
+  --bs-font-sans-serif: "roboto";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   --bs-body-font-family: var(--bs-font-sans-serif);
@@ -55626,12 +55675,6 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
-}
-.header-alpina {
-  font-family: "GT Alpina";
-  font-weight: 400;
-  font-style: normal;
-  font-size: 72px;
 }
 
 /*# sourceMappingURL=style.css.map */

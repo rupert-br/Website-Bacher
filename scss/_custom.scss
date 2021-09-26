@@ -8,19 +8,26 @@ $bacher-green-dark: #0F301C;
 
 // Primary color
 $primary:  $bacher-green;
-
 $nav-link-color: $bacher-green-dark;
 
-$roboto: 'Roboto';
-$font-family-sans-serif: $roboto;
+@font-face {
+    font-family: 'roboto';
+    src: url(../fonts/roboto/Roboto-Medium.ttf) format(truetype);
+}
 
 @font-face {
-    font-family: "GT Alpina";
-    src: url("./public/fonts/gt-alpina/GT-Alpina-Extended-Thin-Trial.woff2") format("woff2")
-};
+    font-family: GT Alpina;
+    src: local('GT Alpina Trial Ext Th');
+    src: url(../fonts/gt_alpina/GT-Alpina-Extended-Thin-Trial.ttf) format(truetype);
+}
 
-$font-alpina: 'GT Alpina';
+.header-alpina {
+    font-family: GT Alpina, 'Times New Roman', Times, serif;
+    font-size: 72px !important;
+}
+
+$font-family-sans-serif: 'roboto';
 
 // Import bootstrap 5
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+//@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
