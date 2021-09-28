@@ -4,19 +4,31 @@
     display: flex;
     align-items: center;
     text-align: center;
-    height: 80px;
     border: 2px solid $bacher-green-dark;
     box-sizing: content-box;
+    font-size: $font-size-base * 1.125 !important;
+}
+
+.company-name-header {
+    text-transform: uppercase !important;
+}
+
+.bg-primary {
+    background-color: $bacher-green;
 }
 
 .border-logo {
     border-right: 2px solid $bacher-green-dark;
 }
 
-.nav-link {
-    height: 80px !important;
-}
-
 .border-contact {
     border-left: 2px solid $bacher-green-dark;
+}
+
+@media (min-width: map-get($grid-breakpoints, md)) {
+    .abs-center-x {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }

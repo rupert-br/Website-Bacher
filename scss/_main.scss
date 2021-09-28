@@ -1,7 +1,37 @@
 @import 'custom';
 
 .bg-primary-light {
-    background-color: rgba($primary, 0.25)
+    background-color: $bacher-green-light;
+}
+
+.bg-primary-extra-light {
+    background-color: $bacher-green-extra-light;
+}
+
+.contact-box {
+    width: 75% !important;
+    padding: 3.5rem 3.5rem 3.5rem 3.5rem !important;
+    border: 2px solid $bacher-green-dark;
+}
+.contact-link {
+    text-decoration: none;
+    color: inherit;
+}
+.contact-box-content {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+h1 {
+    font-family: GT Alpina, 'Times New Roman', Times, serif;
+    font-size: 72px !important;
+}
+
+h2 {
+    font-family: GT Alpina, 'Times New Roman', Times, serif;
+    font-size: 48px !important;
 }
 
 .extra-ws {
