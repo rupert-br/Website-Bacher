@@ -5,22 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <link rel="stylesheet" href="./public/css/style.css">
+
     <title>Document</title>
 </head>
 <body>
 
-    <div id="app">
-        <button v-on:click="filter('all')">ALL</button>
-        <button v-on:click="filter('hotel')">HOTEL</button>
-        <button v-on:click="filter('privat')">PRIVAT</button>
+    <div class="container mt-4" id="app">
+        <button class="btn btn-secondary" v-on:click="filter('all')">ALL</button>
+        <button class="btn btn-secondary" v-on:click="filter('hotel')">HOTELLERIE</button>
+        <button class="btn btn-secondary" v-on:click="filter('privat')">PRIVAT</button>
+        <button class="btn btn-secondary" v-on:click="filter('tueren')">TÜREN</button>
 
-        <ul>
+
+        <div class="grid-container">
             <template v-for="project in projects" :key="project.index">
-                <li v-if="selected == project.type || selected == 'all'">
-                    {{ project.title }} // {{ project.content }} // {{project.type}}
-                </li>
+                <div class="p-2" v-if="selected == project.type || selected == 'all'">
+                    <span>{{ project.year }}</span>
+                    <h2>{{ project.title }}</h2>
+                    <span>{{ project.content }}</span>
+                </div>
               </template>
-        </ul>
+        </div>
     </div>
     
 
@@ -31,19 +37,28 @@
                 selected: 'all',
                 projects: [
                 {
-                    title: 'Projekt 1',
+                    title: 'Hotel Falkensteiner',
                     content: 'Das ist Projekt 1.',
-                    type: 'hotel'   
+                    type: 'hotel',
+                    year: '2017'   
                 },
                 {
-                    title: 'Projekt 2',
+                    title: 'Hotel xyz',
                     content: 'Das ist Projekt 2.',
-                    type: 'hotel'
+                    type: 'hotel',
+                    year: '2018'
                 },
                 {
-                    title: 'Projekt 3',
+                    title: 'Privat Mustermann',
                     content: 'Das ist Projekt 3.',
-                    type: 'privat'
+                    type: 'privat',
+                    year: '2020'
+                },
+                {
+                    title: 'Haus Mustermann',
+                    content: 'Das ist ein Projekt mit Türen.',
+                    type: 'tueren',
+                    year: '2021'
                 }
                 ]
             },
@@ -56,6 +71,7 @@
           });
     </script>
 
-
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 </body>
 </html>
