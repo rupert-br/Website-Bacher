@@ -10,20 +10,50 @@
     <title>Document</title>
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg bg-primary border-header">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Logo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="philosophie.html">Philosphie</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projekte.html">Projekte</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav abs-center-x">
+                    <li class="nav-item"><a class="nav-link company-name-header fw-bold" href="index.html">Hans Bacher</a></li>
+                </ul>
+                <ul class="nav navbar-nav ms-auto">
+                    <li class="nav-item px-3">
+                        <a class="nav-link" href="#">Kontakt</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-    <div class="container mt-4" id="app">
-        <button class="btn btn-secondary" v-on:click="filter('all')">ALL</button>
-        <button class="btn btn-secondary" v-on:click="filter('hotel')">HOTELLERIE</button>
-        <button class="btn btn-secondary" v-on:click="filter('privat')">PRIVAT</button>
-        <button class="btn btn-secondary" v-on:click="filter('tueren')">TÜREN</button>
+    <div class="container-fluid" id="app">
 
-
-        <div class="grid-container">
+        <div class="container-fluid p-5">
+            <button class="btn btn-secondary mx-2" v-on:click="filter('all')">ALL</button>
+            <button class="btn btn-secondary mx-2" v-on:click="filter('hotel')">HOTELLERIE</button>
+            <button class="btn btn-secondary mx-2" v-on:click="filter('privat')">PRIVAT</button>
+            <button class="btn btn-secondary mx-2" v-on:click="filter('tueren')">TÜREN</button>
+        </div>
+        
+        <div class="container-fluid p-5 grid-container">
             <template v-for="project in projects" :key="project.index">
-                <div class="p-2" v-if="selected == project.type || selected == 'all'">
+                <div class="p-4 grid-item" v-if="selected == project.type || selected == 'all'">
                     <span>{{ project.year }}</span>
                     <h2>{{ project.title }}</h2>
                     <span>{{ project.content }}</span>
+                    <div class="fw-bold">Mehr -></div>
                 </div>
               </template>
         </div>
