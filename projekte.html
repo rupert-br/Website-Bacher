@@ -10,7 +10,7 @@
     <title>Document</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-primary border-header">
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary border-header">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Logo</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,22 +38,25 @@
         </div>
     </nav>
 
-    <div class="container-fluid" id="app">
+    <div class="container-fluid bg-primary-extra-light" id="app">
 
         <div class="container-fluid p-5">
-            <button class="btn btn-secondary mx-2" v-on:click="filter('all')">ALL</button>
-            <button class="btn btn-secondary mx-2" v-on:click="filter('hotel')">HOTELLERIE</button>
-            <button class="btn btn-secondary mx-2" v-on:click="filter('privat')">PRIVAT</button>
-            <button class="btn btn-secondary mx-2" v-on:click="filter('tueren')">TÜREN</button>
+            <button class="btn btn-secondary mx-2 border h3 p-3" v-on:click="filter('all')">ALLE</button>
+            <button class="btn btn-secondary mx-2 border h3 p-3" v-on:click="filter('hotel')">HOTELLERIE</button>
+            <button class="btn btn-secondary mx-2 border h3 p-3" v-on:click="filter('privat')">PRIVAT</button>
+            <button class="btn btn-secondary mx-2 border h3 p-3" v-on:click="filter('tueren')">TÜREN</button>
         </div>
         
         <div class="container-fluid p-5 grid-container">
             <template v-for="project in projects" :key="project.index">
-                <div class="p-4 grid-item" v-if="selected == project.type || selected == 'all'">
+                <div class="p-5 grid-item" v-if="selected == project.type || selected == 'all'">
                     <span>{{ project.year }}</span>
-                    <h2>{{ project.title }}</h2>
-                    <span>{{ project.content }}</span>
-                    <div class="fw-bold">Mehr -></div>
+                    <h3>{{ project.title }}</h3>
+                    <div>Mehr
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-arrow-right mb-1" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                        </svg>
+                    </div>
                 </div>
               </template>
         </div>
