@@ -41,3 +41,19 @@ h3 {
 .extra-ws {
     padding-top: 3rem !important;
 }
+
+@media (max-width: map-get($grid-breakpoints, md)) {
+    .contact-box-content {
+        margin-top: 0.2rem;
+        margin-bottom: 0.2rem;
+        margin-left: 0.2rem;
+        margin-right: 0.2rem;
+    }
+    .contact-box {
+        padding: 1rem 1rem 1rem 1rem !important;
+    }
+
+    h1 {
+        font-size: 48px !important;
+    }
+}
