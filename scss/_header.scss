@@ -13,6 +13,10 @@
     text-transform: uppercase !important;
 }
 
+.contact-navbar {
+    border-left: 2px solid $bacher-green-dark;
+}
+
 .bg-primary {
     background-color: $bacher-green;
 }
@@ -25,10 +29,20 @@
     border-left: 2px solid $bacher-green-dark;
 }
 
-@media (min-width: map-get($grid-breakpoints, md)) {
+.abs-center-x {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media (max-width: map-get($grid-breakpoints, md)) {
+    .contact-navbar {
+        border-left: 0px solid $bacher-green-dark;
+    }
+}
+
+@media (max-width: map-get($grid-breakpoints, lg)) {
     .abs-center-x {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
+        top: 0;
     }
 }

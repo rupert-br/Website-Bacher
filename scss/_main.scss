@@ -1,5 +1,7 @@
 @import 'custom';
 
+$font-size-h1: 72px;
+
 .bg-primary-light {
     background-color: $bacher-green-light;
 }
@@ -26,7 +28,7 @@
 
 h1 {
     font-family: GT Alpina, 'Times New Roman', Times, serif;
-    font-size: 72px !important;
+    font-size: $font-size-h1 !important;
 }
 
 h2 {
@@ -54,6 +56,6 @@ h3 {
     }
 
     h1 {
-        font-size: 48px !important;
+        font-size: $font-size-h1*0.9 !important;
     }
 }

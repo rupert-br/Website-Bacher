@@ -22258,6 +22258,10 @@ textarea.form-control-lg {
   text-transform: uppercase !important;
 }
 
+.contact-navbar {
+  border-left: 2px solid #0F301C;
+}
+
 .bg-primary {
   background-color: #cfebd1;
 }
@@ -22270,11 +22274,20 @@ textarea.form-control-lg {
   border-left: 2px solid #0F301C;
 }
 
-@media (min-width: 768px) {
+.abs-center-x {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media (max-width: 768px) {
+  .contact-navbar {
+    border-left: 0px solid #0F301C;
+  }
+}
+@media (max-width: 992px) {
   .abs-center-x {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    top: 0;
   }
 }
 @font-face {
@@ -44653,7 +44666,7 @@ h3, .h3 {
   }
 
   h1, .h1 {
-    font-size: 48px !important;
+    font-size: 64.8px !important;
   }
 }
 @font-face {
