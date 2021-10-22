@@ -9,9 +9,10 @@ npm run build
 # navigate into the build output directory
 cd dist
 
+#git init
 git add -A
 git commit -m 'deploy'
 
-git push origin gh-pages
+git push git@github.com:rupert-br/Website-Bacher.git main:gh-pages
 
 cd -
