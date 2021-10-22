@@ -110,7 +110,7 @@ $navbar-dark-brand-hover-color:           $navbar-dark-active-color !default;
 
 
 $navbar-padding-y:        0rem !default;
-$nav-link-padding-y:      1rem !default;
+$nav-link-padding-y:      1.4rem !default;
 
 
 // scss-docs-start border-radius-variables
@@ -138,5 +138,6 @@ $border-color:                $bacher-green-dark !default;
 $font-family-sans-serif: Avenir Next;
 
 // Import bootstrap 5
-@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import '../../../node_modules/bootstrap/scss/bootstrap.scss';
+//@import "./node_modules/bootstrap/scss/bootstrap.scss";
 //@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
