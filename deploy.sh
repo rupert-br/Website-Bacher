@@ -12,6 +12,6 @@ cd dist
 git add -A
 git commit -m 'deploy'
 
-git push -f git@github.com:rupert-br/Website-Bacher.git main:gh-pages
+git push origin gh-pages
 
 cd -
