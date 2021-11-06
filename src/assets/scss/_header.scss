@@ -4,7 +4,9 @@
     display: flex;
     align-items: center;
     text-align: center;
-    border: 2px solid $bacher-green-dark;
+    border-top: 5px solid $bacher-green-dark;
+    border-bottom: 5px solid $bacher-green-dark;
+    border-right: 5px solid $bacher-green-dark;
     box-sizing: content-box;
     font-size: $font-size-base * 1.125 !important;
 }
@@ -14,7 +16,7 @@
 }
 
 .contact-navbar {
-    border-left: 2px solid $bacher-green-dark;
+    border-left: 5px solid $bacher-green-dark;
 }
 
 .bg-primary {
