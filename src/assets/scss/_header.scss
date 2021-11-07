@@ -25,10 +25,6 @@ $border-header: 5px;
     background-color: $bacher-green;
 }
 
-.border-logo {
-    border-right: 2px solid $bacher-green-dark;
-}
-
 .border-contact {
     border-left: 2px solid $bacher-green-dark;
 }
@@ -39,8 +35,15 @@ $border-header: 5px;
     transform: translateX(-50%);
 }
 
-@media (max-width: map-get($grid-breakpoints, md)) {
+@media (max-width: map-get($grid-breakpoints, lg)) {
     .contact-navbar {
+        display:none;
         border-left: 0px solid $bacher-green-dark;
+    }
+
+    .abs-center-x {
+        position: relative;
+        left: 0%;
+        transform: translateX(0%);
     }
 }

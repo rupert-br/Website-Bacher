@@ -19,10 +19,11 @@
                     <li class="nav-item">
                         <router-link to="/projekte" class="nav-link">Projekte</router-link>
                     </li>
-                </ul>
-                <ul class="nav navbar-nav abs-center-x">
-                    <li class="nav-item">
+                    <li class="nav-item abs-center-x">
                         <router-link to="/" class="nav-link company-name-header fw-bold">Bacher</router-link>
+                    </li>
+                    <li class="nav-item px-5 ms-auto d-lg-none">
+                        <a class="nav-link" href="mailto:office@hans-bacher.at">Kontakt</a>
                     </li>
                 </ul>
                 <ul class="nav navbar-nav ms-auto">
