@@ -4,6 +4,7 @@ import About from '../views/About.vue'
 import Projects from '../views/Projects.vue'
 import Philosophie from '../views/Philosophie.vue'
 import ProjectDetail from '../views/ProjectDetail.vue'
+import NotFound from '../views/NotFound.vue'
 
 const routes = [
   {
@@ -30,12 +31,12 @@ const routes = [
     component: About
   },
   {
-    path: '/projects',
-    name: 'Projects',
+    path: '/projekte',
+    name: 'projekte',
     component: Projects
   },
   {
-    path: '/projects/:id',
+    path: '/projekte/:id',
     name: 'ProjectDetail',
     component: ProjectDetail
   },
@@ -43,12 +44,25 @@ const routes = [
     path: '/philosophie',
     name: 'Philosophie',
     component: Philosophie
+  },
+  {
+    // will match everything
+    path: '/:pathMatch(.*)*',
+    name: 'Not Found',
+    component: NotFound
   }
 ]
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
-  routes
+  routes,
+  scrollBehavior (to, from, savedPosition) {
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        resolve({ left: 0, top: 0 })
+      }, 100)
+    })
+  }
 })
 
 export default router

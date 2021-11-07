@@ -1,6 +1,6 @@
 <template>
-    <div class="container-fluid bg-primary-light text-center p-3 p-md-5">
-        <div class="container contact-box">
+    <div class="container-fluid bg-primary-light text-dark text-center p-3 p-md-5">
+        <div class="container contact-box col-md-8">
             <h2>Lern uns kennen</h2>
             <div class="contact-box-content">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit,

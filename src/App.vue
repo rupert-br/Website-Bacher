@@ -5,6 +5,12 @@
     <Footer />
 </template>
 
+<style>
+.router-link-active {
+  font-weight: 600;
+}
+</style>
+
 <script>
 import Navbar from '@/components/Navbar.vue'
 import Footer from '@/components/Footer.vue'

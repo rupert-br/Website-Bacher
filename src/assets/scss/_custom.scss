@@ -67,12 +67,14 @@ $colors: (
 $bacher-green: rgba(207, 235, 209, 1);
 $bacher-green-light: rgba(245, 251, 246, 1);
 $bacher-green-extra-light: rgba(250, 253, 250, 1);
-$bacher-green-dark: #0F301C;
+$bacher-green-dark: rgba(15,48,28, 1);
+$green-copy: rgba(83, 94, 84, 1);
 
 // scss-docs-end color-variables
 
 // Primary color
 $primary:  $bacher-green;
+$dark: $bacher-green-dark;
 $secondary: $bacher-green-extra-light;
 $nav-link-color: $bacher-green-dark;
 
@@ -96,13 +98,13 @@ $navbar-dark-toggler-icon-bg:       url("data:image/svg+xml,<svg xmlns='http://w
 $navbar-dark-toggler-border-color:  rgba($white, .1) !default;
 
 $navbar-light-color:                $bacher-green-dark !default;
-$navbar-light-hover-color:          rgba($black, .7) !default;
-$navbar-light-active-color:         rgba($black, .9) !default;
+$navbar-light-hover-color:          rgba($bacher-green-dark, .8) !default;
+$navbar-light-active-color:         $bacher-green-dark !default;
 $navbar-light-disabled-color:       rgba($black, .3) !default;
 $navbar-light-toggler-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$navbar-light-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !default;
-$navbar-light-toggler-border-color: rgba($black, .1) !default;
+$navbar-light-toggler-border-color: rgba($bacher-green-dark, .1) !default;
 
-$navbar-light-brand-color:                $navbar-light-active-color !default;
+$navbar-light-brand-color:                $bacher-green-dark !default;
 $navbar-light-brand-hover-color:          $navbar-light-active-color !default;
 $navbar-dark-brand-color:                 $navbar-dark-active-color !default;
 $navbar-dark-brand-hover-color:           $navbar-dark-active-color !default;
@@ -125,11 +127,6 @@ $border-color:                $bacher-green-dark !default;
 // scss-docs-end border-variables
 
 @font-face {
-    font-family: 'roboto';
-    src: url(../fonts/roboto/Roboto-Medium.ttf) format(truetype);
-}
-
-@font-face {
     font-family: GT Alpina;
     src: local('GT Alpina Trial Ext Th');
     src: url(../fonts/gt_alpina/GT-Alpina-Extended-Thin-Trial.ttf) format(truetype);
@@ -137,7 +134,7 @@ $border-color:                $bacher-green-dark !default;
 
 $font-family-sans-serif: Avenir Next;
 
+$body-color:  $green-copy;
+
 // Import bootstrap 5
 @import '../../../node_modules/bootstrap/scss/bootstrap.scss';
-//@import "./node_modules/bootstrap/scss/bootstrap.scss";
-//@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');

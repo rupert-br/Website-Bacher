@@ -10,14 +10,20 @@ $font-size-h1: 72px;
     background-color: $bacher-green-extra-light;
 }
 
+.landing-box {
+    padding: 2rem 2rem 2rem 2rem !important;
+    border: 2px solid $bacher-green-dark;
+}
+
 .contact-box {
-    width: 75% !important;
     padding: 3.5rem 3.5rem 3.5rem 3.5rem !important;
     border: 2px solid $bacher-green-dark;
 }
+
 .contact-link {
     text-decoration: none;
     color: inherit;
+    font-weight: 500;
 }
 .contact-box-content {
     margin-top: 2rem;
@@ -29,19 +35,18 @@ $font-size-h1: 72px;
 h1 {
     font-family: GT Alpina, 'Times New Roman', Times, serif;
     font-size: $font-size-h1 !important;
+    color: $bacher-green-dark;
 }
 
 h2 {
     font-family: GT Alpina, 'Times New Roman', Times, serif;
     font-size: 48px !important;
+    color: $bacher-green-dark;
 }
 
 h3 {
     font-family: GT Alpina, 'Times New Roman', Times, serif;
-}
-
-.extra-ws {
-    padding-top: 3rem !important;
+    color: $bacher-green-dark;
 }
 
 @media (max-width: map-get($grid-breakpoints, md)) {
