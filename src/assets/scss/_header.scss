@@ -36,8 +36,16 @@ $border-header: 5px;
 }
 
 @media (max-width: map-get($grid-breakpoints, lg)) {
+    .border-header {
+        display: block;
+        align-items: center;
+        text-align: center;
+        border: 0px;
+        font-size: $font-size-base * 1.125 !important;
+    }
+
     .contact-navbar {
-        display:none;
+        display: none;
         border-left: 0px solid $bacher-green-dark;
     }
 

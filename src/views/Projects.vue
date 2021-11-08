@@ -41,8 +41,14 @@
 
 <script>
 export default {
+  props: ['name'],
   created () {
     document.title = 'Projekte - Hans Bacher Tischlerei'
+    if (this.name === undefined) {
+      this.selected = 'all'
+    } else {
+      this.selected = this.name
+    }
   },
   data () {
     return {

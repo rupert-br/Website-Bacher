@@ -1,7 +1,7 @@
 <template>
     <nav class="navbar navbar-expand-lg navbar-light bg-primary">
         <div class="container-fluid p-0">
-            <button class="navbar-toggler ms-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler ms-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <router-link to="/">
@@ -11,7 +11,7 @@
                 </svg>
             </div>
             </router-link>
-            <div class="collapse navbar-collapse border-header ps-4" id="navbarTogglerDemo03">
+            <div class="collapse navbar-collapse border-header mx-md-auto ps-md-4" id="navbar-collapse">
                 <ul class="nav navbar-nav">
                     <li class="nav-item">
                         <router-link to="/philosophie" class="nav-link">Philosophie</router-link>
@@ -22,7 +22,7 @@
                     <li class="nav-item abs-center-x">
                         <router-link to="/" class="nav-link company-name-header fw-bold">Bacher</router-link>
                     </li>
-                    <li class="nav-item px-5 ms-auto d-lg-none">
+                    <li class="nav-item px-5 ms-lg-auto d-lg-none pb-3">
                         <a class="nav-link" href="mailto:office@hans-bacher.at">Kontakt</a>
                     </li>
                 </ul>
@@ -35,3 +35,8 @@
         </div>
     </nav>
 </template>
+
+<script>
+export default {
+}
+</script>

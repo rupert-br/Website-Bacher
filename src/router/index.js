@@ -33,7 +33,8 @@ const routes = [
   {
     path: '/projekte',
     name: 'projekte',
-    component: Projects
+    component: Projects,
+    props: route => ({ name: route.query.name })
   },
   {
     path: '/projekte/:id',
