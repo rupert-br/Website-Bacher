@@ -43,10 +43,15 @@
 export default {
   props: ['name'],
   created () {
+    // Set Page title to subpage title
     document.title = 'Projekte - Hans Bacher Tischlerei'
+
+    // Check if name query was passed with router-link
     if (this.name === undefined) {
+      // Set 'all' if no parameter was passed via url
       this.selected = 'all'
     } else {
+      // name param is pased from Home.vue via router-link
       this.selected = this.name
     }
   },
