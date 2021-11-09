@@ -1,4 +1,5 @@
 <template>
+<div>
   <div class="container-fluid bg-primary p-4 p-md-5">
     <div class="h1 header-alpina text-center m-5 p-5 col-md-8 mx-auto">
       Kreation die auf Werten basiert.
@@ -27,6 +28,7 @@
 
     </div>
   </div>
+</div>
 </template>
 
 <script>

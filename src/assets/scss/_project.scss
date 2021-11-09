@@ -1,25 +1,54 @@
 @import 'custom';
 
+
+.rearrange-move {
+  transition: transform 0.8s ease;
+}
+
+$font-size-btn: 24px;
+$font-family-btn: GT Alpina, 'Times New Roman', Times, serif;
+
+.btn-active {
+  background-color: transparent;
+  border: 1px solid $bacher-green-dark;
+  font-size: $font-size-btn;
+  font-family: $font-family-btn;
+}
+
+.btn-inactive {
+  background-color: transparent;
+  border: 1px solid transparent;
+  font-size: $font-size-btn;
+  font-family: $font-family-btn;
+  transition: border 350ms ease;
+}
+
+.btn-inactive:hover {
+  background-color: transparent;
+  border: 1px solid $bacher-green-dark;
+}
+
+
 .grid-container {
     display: grid;
     grid: auto / repeat(3, 1fr);
     gap: 1rem;
     row-gap: 3em;
-  }
-  .grid-item {
-    border: 1px solid $bacher-green-dark;
-    padding: 1rem;
-    text-align: left;
-    grid-column: span 2;
-  }
-  .grid-container .grid-item:nth-child(3n), 
-  .grid-container .grid-item:nth-child(3n-1) {
-    grid-column: span 1;
-    border: 0;
-  }
+}
+.grid-item {
+  border: 1px solid $bacher-green-dark;
+  padding: 1rem;
+  text-align: left;
+  grid-column: span 2;
+}
+.grid-container .grid-item:nth-child(3n), 
+.grid-container .grid-item:nth-child(3n-1) {
+  grid-column: span 1;
+  border: 0;
+}
 
-  @media (max-width: map-get($grid-breakpoints, md)) {
-    .grid-container {
-        display: block;
-    }
+@media (max-width: map-get($grid-breakpoints, md)) {
+  .grid-container {
+      display: block;
+  }
 }

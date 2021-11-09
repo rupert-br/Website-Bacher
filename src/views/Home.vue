@@ -1,4 +1,5 @@
 <template>
+<div>
     <div class="container-fluid bg-primary extra-ws p-4 p-md-5">
         <div class="row my-5 mx-auto px-md-5 py-md-5">
             <div class="col-lg-5 my-auto">
@@ -83,6 +84,7 @@
             <div class="col-lg-6 px-md-5">Image</div>
         </div>
     </div>
+</div>
 </template>
 
 <script>
