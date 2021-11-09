@@ -69,9 +69,15 @@ export default {
     if (this.name === undefined) {
       // Set 'all' if no parameter was passed via url
       this.selected = 'all'
+      this.selectedProjects = this.projects
     } else {
       // name param is pased from Home.vue via router-link
       this.selected = this.name
+      this.projects.map(elem => {
+        if (elem.type === this.name) {
+          this.selectedProjects.push(elem)
+        }
+      })
     }
   },
   data () {
