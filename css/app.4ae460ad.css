@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap);.router-link-active{font-weight:600}/*!
+@import url(https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap);.router-link-active{transition:all .8s ease;font-weight:600}.fade-enter-active,.fade-leave-active{transition-delay:.8s}.fade-enter-from,.fade-leave-to{opacity:1}.list-enter-active,.list-leave-active{transition:all .5s ease}.list-enter-from,.list-leave-to{opacity:0}/*!
  * Bootstrap v5.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
  * Copyright 2011-2021 Twitter, Inc.
@@ -23,7 +23,7 @@
  * Copyright 2011-2021 The Bootstrap Authors
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
- */.grid-container{display:grid;grid:auto/repeat(3,1fr);gap:1rem;row-gap:3em}.grid-item{border:1px solid #0f301c;padding:1rem;text-align:left;grid-column:span 2}.grid-container .grid-item:nth-child(3n),.grid-container .grid-item:nth-child(3n-1){grid-column:span 1;border:0}@media(max-width:768px){.grid-container{display:block}}@font-face{font-family:GT Alpina;src:local("GT Alpina Trial Ext Th");src:url(../fonts/GT-Alpina-Extended-Thin-Trial.4d13a729.ttf) format(truetype)}/*!
+ */.rearrange-move{transition:transform .8s ease}.btn-active{border:1px solid #0f301c}.btn-active,.btn-inactive{background-color:transparent;font-size:24px;font-family:GT Alpina,Times New Roman,Times,serif}.btn-inactive{border:1px solid transparent;transition:border .35s ease}.btn-inactive:hover{background-color:transparent;border:1px solid #0f301c}.grid-container{display:grid;grid:auto/repeat(3,1fr);gap:1rem;row-gap:3em}.grid-item{border:1px solid #0f301c;padding:1rem;text-align:left;grid-column:span 2}.grid-container .grid-item:nth-child(3n),.grid-container .grid-item:nth-child(3n-1){grid-column:span 1;border:0}@media(max-width:768px){.grid-container{display:block}}@font-face{font-family:GT Alpina;src:local("GT Alpina Trial Ext Th");src:url(../fonts/GT-Alpina-Extended-Thin-Trial.4d13a729.ttf) format(truetype)}/*!
  * Bootstrap v5.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
  * Copyright 2011-2021 Twitter, Inc.
